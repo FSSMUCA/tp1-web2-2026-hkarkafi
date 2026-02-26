@@ -16,7 +16,14 @@
       // Votre code JavaScript ici
       let prenom="Hassan";
       let nom="OULED ELKARKAFI";
-      let ville="Marrakech"
+      let ville="Marrakech";
+      let age =20;
+      document.getElementById("nomComplet").innerHTML=nom+" "+prenom;
+      document.getElementById("age").innerHTML=age;
+      document.getElementById("ville").innerHTML=ville;
+       document.getElementById("ville").innerHTML=`Je m'appelle ${prenom} ${nom}, 
+      j'ai ${age} ans et j'habite à ${ville}.`;
+      document.title="Fiche de "+prenom;
     </script>
   </body>
 </html>

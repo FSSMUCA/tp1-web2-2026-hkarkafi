@@ -7,9 +7,20 @@
   <body>
     <h1>Exercice X</h1>
     <!-- Votre contenu HTML ici -->
-
+    <h1> Calculatrice de cercle</h1>
+<div id="rayon"></div>
+<div id="perimetre"></div>
+<div id="surface"></div>
     <script>
       // Votre code JavaScript ici
+      const PI=Math.PI;
+      let rayon =prompt("quelle est le rayon?");
+      rayon=Number(rayon);
+      let périmètre=2 * PI * rayon;
+      let surface=PI * rayon * rayon;
+      document.getElementById("rayon").innerHTML=`Rayon : ${rayon} cm`;
+       document.getElementById("perimetre").innerHTML=`Périmètre : ${périmètre.toFixed()}cm`;
+        document.getElementById("surface").innerHTML=`Surface : ${surface.toFixed()}cm²`;
     </script>
   </body>
 </html>
