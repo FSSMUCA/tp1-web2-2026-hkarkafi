@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>TP JavaScript</title>
+  </head>
+  <body>
+    <h1>Exercice 3</h1>
+    <!-- Votre contenu HTML ici -->
+
+    <script>
+      // Votre code JavaScript ici
+      const TAUX_TVA=0.20
+      let prixHT=150
+      let prixTTC = prixHT + (TAUX_TVA * prixHT)
+      //"Prix HT : 150 € | TVA (20%) : 30 € | Prix TTC : 180 €"
+      console.log("Prix HT : " ,prixHT ," €", "| TVA (20%) : 20%" ,"| Prix TTC :",prixTTC," €" )
+      TAUX_TVA=0.30
+      // lors du modification du costant il s'affiche un message <Uncaught TypeError: Assignment to constant variable. 
+    </script>
+  </body>
+</html>
